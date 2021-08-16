@@ -1,8 +1,8 @@
 {
-  "name": "Music Bot",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "name": "RiZoeLXMusic",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by RiZoeL",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/ImJanindu/GroupMusicBot",
+  "repository": "https://github.com/MrRizoel/RiZoeLXMusic",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
