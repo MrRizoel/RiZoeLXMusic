@@ -6,9 +6,8 @@
   <img src="https://telegra.ph/file/bf19c811fe0c137f7cb61.jpg">
 </p>
 <H3>Creator</h3>
-#### 
+
 [![telegram badge](https://img.shields.io/badge/@TheRiZoeL-30302f?style=for-the-badge&logo=telegram)](https://t.me/TheRiZoeL)
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=TheRiZoeL&label=Profile%20Views&color=red&style=flat-square" alt="TheRiZoeL" /> </p>
 
 <h3>Requirements 📝</h3>
 
