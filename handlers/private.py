@@ -55,9 +55,4 @@ RIZ_PIC = "https://telegra.ph/file/d9f9d87cf08142a8cafe2.jpg"
 @Client.on_message(filters.command("alive") & ~filters.edited)
 async def alive(client: Client, message: Message):
     if RIZ_PIC:
-       caption=RIZ_MSG,
-       reply_markup=InlineKeyboardMarkup(                   
-                          [[
-                              InlineKeyboardButton(
-            text="🥀ℝ𝚒ℤ𝚘𝚎𝕃", url="http://t.me/TheRiZoeL"),
-                          ]]
+       caption=RIZ_MSG
