@@ -44,9 +44,9 @@ async def gstart(_, message: Message):
 
 
 RIZ_PIC = "https://telegra.ph/file/d9f9d87cf08142a8cafe2.jpg"
-@Client.on_message(command(["alive", f"alive@RiZoeLXMusic_Bot"]) & ~filters.edited)
+@Client.on_message(filters.comman("alive") & ~filters.edited)
 @sudo_users_only
-async def get_uptime(client: Client, message: Message):
+async def alive(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
