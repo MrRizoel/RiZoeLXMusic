@@ -46,9 +46,6 @@ async def gstart(_, message: Message):
 RIZ_PIC = "https://telegra.ph/file/d9f9d87cf08142a8cafe2.jpg"
 @Client.on_message(filters.command("alive") & ~filters.edited)
 async def alive(client: Client, message: Message):
-    current_time = datetime.utcnow()
-    uptime_sec = (current_time - START_TIME).total_seconds()
-    uptime = await _human_time_duration(int(uptime_sec))
     if RIZ_PIC:
         RIZ_caption = f"ℝ𝚒ℤ𝚘𝚎𝕃𝕏𝕄𝚞𝕊𝚒𝚌 𝚒𝚣𝚣 𝔸𝕃𝕀𝕍𝔼\n\n"
         RIZ_caption += f"◑ ━━━━━ ▣ ━━━━━ ◐\n"
