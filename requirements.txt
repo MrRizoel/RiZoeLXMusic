@@ -1,6 +1,7 @@
 pyrogram
-TgCrypto
-py-tgcalls==0.5.2
+tgcrypto
+git+https://github.com/pyrogram/pyrogram@master
+py-tgcalls==0.5.5
 python-dotenv
 youtube_dl
 youtube_search_python
@@ -10,6 +11,12 @@ aiofiles
 asyncio
 youtube_search
 search_engine_parser
-ffmpeg
-Pillow
-ujson
+ffmpeg-python
+pillow
+future
+psutil
+wget
+motor
+dnspython
+bs4
+pyaml
