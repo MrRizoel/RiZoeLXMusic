@@ -43,3 +43,23 @@ async def gstart(_, message: Message):
    )
 
 
+RIZ_PIC = "https://telegra.ph/file/d9f9d87cf08142a8cafe2.jpg"
+@Client.on_message(command(["alive", f"alive@RiZoeLXMusic_Bot"]) & ~filters.edited)
+@sudo_users_only
+async def get_uptime(client: Client, message: Message):
+    current_time = datetime.utcnow()
+    uptime_sec = (current_time - START_TIME).total_seconds()
+    uptime = await _human_time_duration(int(uptime_sec))
+    if RIZ_PIC:
+        RIZ_caption = f"ℝ𝚒ℤ𝚘𝚎𝕃𝕏𝕄𝚞𝕊𝚒𝚌 𝚒𝚣𝚣 𝔸𝕃𝕀𝕍𝔼\n\n"
+        RIZ_caption += f"◑ ━━━━━ ▣ ━━━━━ ◐\n"
+        RIZ_caption += f"➣ ʙᴏᴛ ᴠɪʀsɪᴏɴ : 1.0.2\n"
+        RIZ_caption += f"➣ ᴄʀᴇᴀᴛᴏʀ : [ʀɪᴢᴏᴇʟ](https://t.me/TheRiZoeL)\n"
+        RIZ_caption += f"➣ sᴜᴘᴘᴏʀᴛ : [ᴊᴏɪɴ](https://t.me/DNHxHELL)\n"
+        RIZ_caption += f"➣ sᴛᴀʀᴛ ᴛɪᴍᴇ : `{START_TIME_ISO}`\n"
+        RIZ_caption += f"➣ ᴜᴘᴛɪᴍᴇ : `{uptime}`\n"
+        RIZ_caption += f"◑ ━━━━━ ▣ ━━━━━ ◐\n\n"
+        await event.client.send_file(
+            event.chat_id, RIZ_PIC, caption=RIZ_caption
+        )
+        await event.delete()
