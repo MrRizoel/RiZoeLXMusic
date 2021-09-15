@@ -52,8 +52,8 @@ async def alive(client: Client, message: Message):
         RIZ_caption += f"➣ ʙᴏᴛ ᴠɪʀsɪᴏɴ : 1.0.2\n"
         RIZ_caption += f"➣ ᴄʀᴇᴀᴛᴏʀ : [ʀɪᴢᴏᴇʟ](https://t.me/TheRiZoeL)\n"
         RIZ_caption += f"➣ sᴜᴘᴘᴏʀᴛ : [ᴊᴏɪɴ](https://t.me/DNHxHELL)\n"
-        RIZ_caption += f"➣ sᴛᴀʀᴛ ᴛɪᴍᴇ : `{START_TIME_ISO}`\n"
-        RIZ_caption += f"➣ ᴜᴘᴛɪᴍᴇ : `{uptime}`\n"
+        RIZ_caption += f"➣ sᴛᴀʀᴛ ᴛɪᴍᴇ :\n"
+        RIZ_caption += f"➣ ᴜᴘᴛɪᴍᴇ :\n"
         RIZ_caption += f"◑ ━━━━━ ▣ ━━━━━ ◐\n\n"
         await event.client.send_file(
             event.chat_id, RIZ_PIC, caption=RIZ_caption
