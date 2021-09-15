@@ -4,6 +4,14 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import BOT_NAME as bn
 from helpers.filters import other_filters2
 
+RIZ_MSG = """
+◑ ━━━━━ ▣ ━━━━━ ◐
+➣ ʙᴏᴛ ᴠɪʀsɪᴏɴ : 1.0.2
+➣ ᴄʀᴇᴀᴛᴏʀ : [ʀɪᴢᴏᴇʟ](https://t.me/TheRiZoeL)
+➣ sᴜᴘᴘᴏʀᴛ : [ᴊᴏɪɴ](https://t.me/DNHxHELL)
+➣ sᴛᴀʀᴛ ᴛɪᴍᴇ : 
+➣ ᴜᴘᴛɪᴍᴇ :
+◑ ━━━━━ ▣ ━━━━━ ◐"""
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
@@ -47,15 +55,9 @@ RIZ_PIC = "https://telegra.ph/file/d9f9d87cf08142a8cafe2.jpg"
 @Client.on_message(filters.command("alive") & ~filters.edited)
 async def alive(client: Client, message: Message):
     if RIZ_PIC:
-        RIZ_caption = f"ℝ𝚒ℤ𝚘𝚎𝕃𝕏𝕄𝚞𝕊𝚒𝚌 𝚒𝚣𝚣 𝔸𝕃𝕀𝕍𝔼\n\n"
-        RIZ_caption += f"◑ ━━━━━ ▣ ━━━━━ ◐\n"
-        RIZ_caption += f"➣ ʙᴏᴛ ᴠɪʀsɪᴏɴ : 1.0.2\n"
-        RIZ_caption += f"➣ ᴄʀᴇᴀᴛᴏʀ : [ʀɪᴢᴏᴇʟ](https://t.me/TheRiZoeL)\n"
-        RIZ_caption += f"➣ sᴜᴘᴘᴏʀᴛ : [ᴊᴏɪɴ](https://t.me/DNHxHELL)\n"
-        RIZ_caption += f"➣ sᴛᴀʀᴛ ᴛɪᴍᴇ :\n"
-        RIZ_caption += f"➣ ᴜᴘᴛɪᴍᴇ :\n"
-        RIZ_caption += f"◑ ━━━━━ ▣ ━━━━━ ◐\n\n"
-        await event.client.send_file(
-            event.chat_id, RIZ_PIC, caption=RIZ_caption
-        )
-        await event.delete()
+       caption=RIZ_MSG,
+       reply_markup=InlineKeyboardMarkup(                   
+                          [[
+                              InlineKeyboardButton(
+            text="🥀ℝ𝚒ℤ𝚘𝚎𝕃", url="http://t.me/TheRiZoeL"),
+                          ]]
