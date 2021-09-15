@@ -44,7 +44,7 @@ async def gstart(_, message: Message):
 
 
 RIZ_PIC = "https://telegra.ph/file/d9f9d87cf08142a8cafe2.jpg"
-@Client.on_message(filters.comman("alive") & ~filters.edited)
+@Client.on_message(filters.command("alive") & ~filters.edited)
 @sudo_users_only
 async def alive(client: Client, message: Message):
     current_time = datetime.utcnow()
