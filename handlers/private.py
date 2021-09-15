@@ -4,15 +4,6 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import BOT_NAME as bn
 from helpers.filters import other_filters2
 
-RIZ_MSG = """
-◑ ━━━━━ ▣ ━━━━━ ◐
-➣ ʙᴏᴛ ᴠɪʀsɪᴏɴ : 1.0.2
-➣ ᴄʀᴇᴀᴛᴏʀ : [ʀɪᴢᴏᴇʟ](https://t.me/TheRiZoeL)
-➣ sᴜᴘᴘᴏʀᴛ : [ᴊᴏɪɴ](https://t.me/DNHxHELL)
-➣ sᴛᴀʀᴛ ᴛɪᴍᴇ : 
-➣ ᴜᴘᴛɪᴍᴇ :
-◑ ━━━━━ ▣ ━━━━━ ◐"""
-
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAELUCJhGiacm9ro5nAJXr_GlzPrpV3UgAACNwIAAkGdiFW9ustLyOBHoiAE")
@@ -50,9 +41,3 @@ async def gstart(_, message: Message):
         )
    )
 
-
-RIZ_PIC = "https://telegra.ph/file/d9f9d87cf08142a8cafe2.jpg"
-@Client.on_message(filters.command("alive") & ~filters.edited)
-async def alive(client: Client, message: Message):
-    if RIZ_PIC:
-       caption=RIZ_MSG
