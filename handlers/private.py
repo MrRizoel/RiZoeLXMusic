@@ -10,18 +10,18 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
 
-I'm Private music of @TheRiZoeL For group's voice call. Developed by [ℝ𝚒ℤ𝚘𝚎𝕃](https://t.me/TheRiZoeL).
+I'm Bot For group's voice call. I can Play Music On groups voice Calls.**
 
-If you want to add this Bot in your group Contact @TheRiZoeL**
+__Powered by @RiZoeLX__
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🥀ℝ𝚒ℤ𝚘𝚎𝕃", url="https://t.me/TheRiZoeL")
+                        "• Source Code •", url="https://github.com/MrRizoel/RiZoeLXMusic")
                   ],[ 
                     InlineKeyboardButton(
-                        "ᴅɴʜxʜᴇʟʟ", url="https://t.me/DNHxHELL"
+                        "• Support Group •", url="https://t.me/DNHxHELL"
                     )]
             ]
         ),
@@ -30,12 +30,12 @@ If you want to add this Bot in your group Contact @TheRiZoeL**
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**RiZoeL Music Player Online ✅**""",
+      await message.reply_text("""**Music Player Is Online ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "RiZoeL", url="https://t.me/RiZoeL")
+                        "• Channel •", url="https://t.me/RiZoeLX")
                 ]
             ]
         )
