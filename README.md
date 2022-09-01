@@ -1,7 +1,6 @@
 <h2 align="centre">ℝ𝚒ℤ𝚘𝚎𝕃𝕏𝕄𝚞𝚜𝚒𝚌 🎵</h2>
 
-### A bot that can play music on telegram group's voice call
-
+### A bot that can play music on telegram group's voice cal
 <p align="center">
   <img src="https://telegra.ph/file/bf19c811fe0c137f7cb61.jpg">
 </p>
@@ -34,4 +33,3 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Infinity-Bots/GroupMusicPlayerBot)
 
 Use [Repl Link](https://replit.com/@SpEcHiDe/GenerateStringSession) to get pyrogram string session
-
